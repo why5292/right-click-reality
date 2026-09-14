@@ -10,6 +10,8 @@
 
 SwiftUI · iPhone · Web · DeepSeek / Gemini
 
+**🏆 第一名 · TRAE on Campus · AI Coding Hackathon @ 香港城市大学 · 单人 100 分钟闪电开发**
+
 </div>
 
 ## 为什么做这个项目
@@ -20,7 +22,18 @@ Right Click Reality 把照片变成可以探索的界面：拍照或从相册选
 
 菜单关注的不只是物品的名称，还有它此刻的状态。面对出现异常的食物，比起介绍它通常怎么吃，更有帮助的是解释看到了什么、建议下一步怎样处理。遇到陌生的健身器械，可以获取使用提示；看到外文海报，可以读取文字、理解内容。
 
-这个项目起源于一场字节TRAE团队香港城市大学120 分钟开发环节的黑客松，拿到了第一名🥇，并在活动后继续完善了真机体验、模型接入与针对性建议。
+这个项目诞生于 TRAE on Campus · AI Coding Hackathon（香港城市大学）的单人 100 分钟闪电开发环节并获得第一名，赛后继续完善了真机体验、模型接入与针对性建议。
+
+## English
+
+Right Click Reality turns a photo into an explorable interface: take a picture, tap a detected object, and open its own "right-click menu" with state-aware suggestions, transcription, and translation you can copy or share.
+
+- SwiftUI iOS app + mobile web client, sharing one Node.js backend with zero runtime dependencies
+- Model keys stay server-side; supports DeepSeek and Gemini vision models
+- Bounded retries honoring Retry-After, request cancellation, and strict result validation — failures never fall back to fake sample output
+- 24 backend tests and 18 Swift core checks pass; see below for setup
+
+🏆 1st place, TRAE on Campus · AI Coding Hackathon @ CityU HK — solo 100-minute build.
 
 ## 看看它如何工作
 
@@ -167,7 +180,6 @@ docs/images/   项目截图
 
 `.env`、各类 `.env.*`（配置模板除外）、本地 Xcode 配置、签名证书、构建产物和日志均已加入 `.gitignore`。仓库只提供空密钥模板。
 
-- [产品需求与项目演进](PRD.md)
 - [DeepSeek 接入和实测](DEEPSEEK.md)
 - [状态建议的设计](STATE-ADVICE.md)
 - [验证记录](VERIFICATION.md)
