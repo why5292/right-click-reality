@@ -10,7 +10,7 @@
 
 SwiftUI · iPhone · Web · DeepSeek / Gemini
 
-**🏆 第一名 · TRAE on Campus · AI Coding Hackathon @ 香港城市大学 · 单人 100 分钟闪电开发**
+**🏆 第一名 · TRAE on Campus · AI Coding Hackathon @ 香港城市大学 · 三人组队 2 小时闪电开发**
 
 </div>
 
@@ -22,7 +22,7 @@ Right Click Reality 把照片变成可以探索的界面：拍照或从相册选
 
 菜单关注的不只是物品的名称，还有它此刻的状态。面对出现异常的食物，比起介绍它通常怎么吃，更有帮助的是解释看到了什么、建议下一步怎样处理。遇到陌生的健身器械，可以获取使用提示；看到外文海报，可以读取文字、理解内容。
 
-这个项目诞生于 TRAE on Campus · AI Coding Hackathon（香港城市大学）的单人 100 分钟闪电开发环节并获得第一名，赛后继续完善了真机体验、模型接入与针对性建议。
+这个项目诞生于 TRAE on Campus · AI Coding Hackathon（香港城市大学）的三人组队 2 小时闪电开发环节并获得第一名，赛后继续完善了真机体验、模型接入与针对性建议。
 
 ## English
 
@@ -33,7 +33,7 @@ Right Click Reality turns a photo into an explorable interface: take a picture, 
 - Bounded retries honoring Retry-After, request cancellation, and strict result validation — failures never fall back to fake sample output
 - 24 backend tests and 18 Swift core checks pass; see below for setup
 
-🏆 1st place, TRAE on Campus · AI Coding Hackathon @ CityU HK — solo 100-minute build.
+🏆 1st place, TRAE on Campus · AI Coding Hackathon @ CityU HK — built by a 3-person team in a 2-hour sprint.
 
 ## 看看它如何工作
 
