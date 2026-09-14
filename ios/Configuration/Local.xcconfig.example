@@ -1,0 +1,5 @@
+// iPhone and Mac must be on the same reachable network for a local backend.
+// Replace YOUR_MAC_NAME with the result of: scutil --get LocalHostName
+// A .local host is suitable for LAN development; HTTPS hosts also work.
+RCR_BACKEND_URL = http:/$()/YOUR_MAC_NAME.local:8787
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID

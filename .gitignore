@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.mobileprovision
+*.zip
+ios/Configuration/Local.xcconfig
+node_modules/
+*.log

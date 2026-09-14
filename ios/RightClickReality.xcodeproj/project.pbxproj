@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18459E9C75B9545AD9B8B381 /* RightClickRealityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB48DAD0B41233D4B9D7AD /* RightClickRealityApp.swift */; };
+		2B367FD3E9635EE9C18672FE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0ABB172A2735633B0244FF /* Models.swift */; };
+		452796DDC4CE938C6A165761 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA47F968230673FA03F1D7 /* PhotoViewModel.swift */; };
+		79D4CE17D2935E5401660715 /* ImagePreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3F306DC094336DD6E4571 /* ImagePreparation.swift */; };
+		7CCFE7C80852B725B2B9FFF6 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC638C06BBD5CD9A24AA1268 /* Geometry.swift */; };
+		94FC738582F39828F783E9EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B10C4D42EEAC26E8761488 /* ContentView.swift */; };
+		9DE6E6EF0BC3FFB3FB5BC5A9 /* PhotoCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774423FE96EBD92852775450 /* PhotoCanvas.swift */; };
+		B28C3F68EB29584F6B1E7CF2 /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95F27BD8D793A052F956C38 /* AnalysisService.swift */; };
+		E1464A48E864F655B8248D61 /* ResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96D7331602370A1918D029 /* ResultSheet.swift */; };
+		E3B94F4997B6F3345B39A358 /* SystemCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA47F9AF8519376C2B3239C /* SystemCamera.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06271BAF49532C879AA3C58B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0ABB172A2735633B0244FF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Core/Models.swift; sourceTree = "<group>"; };
+		2656197ED7B4813E81E9D5FE /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		28FB48DAD0B41233D4B9D7AD /* RightClickRealityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightClickRealityApp.swift; sourceTree = "<group>"; };
+		774423FE96EBD92852775450 /* PhotoCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoCanvas.swift; path = Views/PhotoCanvas.swift; sourceTree = "<group>"; };
+		7F96D7331602370A1918D029 /* ResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultSheet.swift; path = Views/ResultSheet.swift; sourceTree = "<group>"; };
+		85FA47F968230673FA03F1D7 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		8CD3F306DC094336DD6E4571 /* ImagePreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePreparation.swift; path = Services/ImagePreparation.swift; sourceTree = "<group>"; };
+		9CA47F9AF8519376C2B3239C /* SystemCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SystemCamera.swift; path = Views/SystemCamera.swift; sourceTree = "<group>"; };
+		A8792157CB4F27FB949C035F /* RightClickReality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightClickReality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC638C06BBD5CD9A24AA1268 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = Core/Geometry.swift; sourceTree = "<group>"; };
+		B95F27BD8D793A052F956C38 /* AnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnalysisService.swift; path = Services/AnalysisService.swift; sourceTree = "<group>"; };
+		E1B10C4D42EEAC26E8761488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		F2BAE6F78EB9FE600BBA6945 /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EB9F436983BFDE3C85FBAF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0472485C18A4C2ED4FFF8B1A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2656197ED7B4813E81E9D5FE /* Base.xcconfig */,
+				F2BAE6F78EB9FE600BBA6945 /* Local.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		158EFF22A6EF5F98E381D118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8792157CB4F27FB949C035F /* RightClickReality.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66474652908ED2E0775E04A9 = {
+			isa = PBXGroup;
+			children = (
+				DBDE6BF6A8FE93FAB555567A /* RightClickReality */,
+				0472485C18A4C2ED4FFF8B1A /* Configuration */,
+				158EFF22A6EF5F98E381D118 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBDE6BF6A8FE93FAB555567A /* RightClickReality */ = {
+			isa = PBXGroup;
+			children = (
+				AC638C06BBD5CD9A24AA1268 /* Geometry.swift */,
+				1F0ABB172A2735633B0244FF /* Models.swift */,
+				85FA47F968230673FA03F1D7 /* PhotoViewModel.swift */,
+				28FB48DAD0B41233D4B9D7AD /* RightClickRealityApp.swift */,
+				B95F27BD8D793A052F956C38 /* AnalysisService.swift */,
+				8CD3F306DC094336DD6E4571 /* ImagePreparation.swift */,
+				E1B10C4D42EEAC26E8761488 /* ContentView.swift */,
+				774423FE96EBD92852775450 /* PhotoCanvas.swift */,
+				7F96D7331602370A1918D029 /* ResultSheet.swift */,
+				9CA47F9AF8519376C2B3239C /* SystemCamera.swift */,
+				06271BAF49532C879AA3C58B /* Info.plist */,
+			);
+			path = RightClickReality;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34A04005BCAF206EEC990BD9 /* RightClickReality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C73E6481A31CFC647F47AB /* Build configuration list for PBXNativeTarget "RightClickReality" */;
+			buildPhases = (
+				D7C1BFE7D80B8EB4BA9DF36D /* Sources */,
+				0EB9F436983BFDE3C85FBAF7 /* Frameworks */,
+				25C4D3F7D04816FB01CEFF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RightClickReality;
+			productName = RightClickReality;
+			productReference = A8792157CB4F27FB949C035F /* RightClickReality.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					34A04005BCAF206EEC990BD9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 9879E227F5AD614B3D33074F /* Build configuration list for PBXProject "RightClickReality" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zh_CN,
+			);
+			mainGroup = 66474652908ED2E0775E04A9;
+			productRefGroup = 158EFF22A6EF5F98E381D118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A04005BCAF206EEC990BD9 /* RightClickReality */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C4D3F7D04816FB01CEFF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7C1BFE7D80B8EB4BA9DF36D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCFE7C80852B725B2B9FFF6 /* Geometry.swift in Sources */,
+				2B367FD3E9635EE9C18672FE /* Models.swift in Sources */,
+				452796DDC4CE938C6A165761 /* PhotoViewModel.swift in Sources */,
+				18459E9C75B9545AD9B8B381 /* RightClickRealityApp.swift in Sources */,
+				B28C3F68EB29584F6B1E7CF2 /* AnalysisService.swift in Sources */,
+				79D4CE17D2935E5401660715 /* ImagePreparation.swift in Sources */,
+				94FC738582F39828F783E9EE /* ContentView.swift in Sources */,
+				9DE6E6EF0BC3FFB3FB5BC5A9 /* PhotoCanvas.swift in Sources */,
+				E1464A48E864F655B8248D61 /* ResultSheet.swift in Sources */,
+				E3B94F4997B6F3345B39A358 /* SystemCamera.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CCE7051BAA1B8E65CDEECD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88D85A90A351FA4C70629102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2656197ED7B4813E81E9D5FE /* Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RightClickReality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rightclickreality.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C3F440ED527929AD713ECBDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2656197ED7B4813E81E9D5FE /* Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RightClickReality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rightclickreality.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB9B6A82A6FECD10C0E43155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9879E227F5AD614B3D33074F /* Build configuration list for PBXProject "RightClickReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCE7051BAA1B8E65CDEECD3 /* Debug */,
+				EB9B6A82A6FECD10C0E43155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C73E6481A31CFC647F47AB /* Build configuration list for PBXNativeTarget "RightClickReality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F440ED527929AD713ECBDE /* Debug */,
+				88D85A90A351FA4C70629102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244210E48437B6556980A702 /* Project object */;
+}

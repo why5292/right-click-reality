@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11150f">
+  <title>Right Click Reality · 给现实一个右键</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Right Click Reality 首页"><img src="/favicon.svg" alt=""><span>RIGHT CLICK<br><strong>REALITY</strong></span></a>
+      <span class="edition">现实交互实验 <span>01 / CAMERA</span></span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="headline">
+        <div class="eyebrow"><span></span> THE WORLD IS YOUR INTERFACE</div>
+        <h1 id="headline">给现实<br>一个<span class="accent">右键。</span></h1>
+        <p class="lead">看到一个东西。<br>发现你能对它做什么。</p>
+        <p class="intro-copy">拍下眼前的海报、书本或物品，点一下物体，<br class="desktop-break">读懂、翻译、复制、分享。</p>
+        <ol class="steps"><li><b>01</b> 拍一张</li><li><b>02</b> 点物体</li><li><b>03</b> 做点什么 <span>↗</span></li></ol>
+        <div class="intro-foot"><span class="cross">+</span><p>从一张照片开始，<br>让现实里的信息触手可及。</p></div>
+      </section>
+      <section class="workbench" aria-label="拍照与物体操作">
+        <div class="bench-heading"><span><span class="live-dot"></span> REALITY LENS</span><span id="mode-label">等待一张照片</span></div>
+        <div class="photo-viewport" id="viewport">
+          <div class="empty-state" id="empty-state">
+            <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="finder-object">R<span>↖</span></span><span class="finder-label">发现新的操作</span></div>
+            <h2>下一次点击，在现实里。</h2><p>把一件物品放进画面<br>剩下的，交给你的好奇心。</p>
+          </div>
+          <div class="image-stage" id="image-stage" hidden><img id="photo" alt="当前选择的照片"><div id="boxes"></div></div>
+          <div class="loading-overlay" id="loading" hidden><span class="scan-line"></span><div><span class="spinner"></span><strong id="loading-label">正在理解画面</strong><small>识别物体，准备属于它的操作</small></div></div>
+          <div id="context-menu" class="context-menu" role="group" aria-label="物体操作" hidden></div>
+          <span id="demo-badge" class="demo-badge" hidden>交互示例 · 人工标注</span>
+          <div id="photo-count" class="photo-count" hidden></div>
+        </div>
+        <div class="under-photo"><p id="status" role="status" aria-live="polite">现实里的东西，也可以点一下。</p><button id="clear-button" class="text-button" hidden>清空</button></div>
+        <div id="error-banner" class="error-banner" role="alert" hidden><p id="error-text"></p><button id="retry-button">重新识别 ↗</button></div>
+        <div id="object-list" class="object-list" aria-label="选择物体" hidden></div>
+        <div class="capture-controls">
+          <button id="album-button" class="album-button" aria-label="从相册选择图片"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 3-3 6 5"/></svg></button>
+          <button id="camera-button" class="capture-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 5 9.5 3h5L16 5h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></svg><span id="capture-label">拍一张，试试看</span><span class="button-arrow">↗</span></button>
+          <input id="camera-input" type="file" accept="image/*" capture="environment" hidden>
+          <input id="album-input" type="file" accept="image/*" hidden>
+        </div>
+        <p class="privacy-note">所选照片会发送至识别服务。只分析当前这张照片。</p>
+        <div class="samples"><span class="sample-label">或者先探索示例</span><div class="sample-options"><button data-demo="poster"><img src="/assets/reference-poster.jpg" alt=""><span>活动海报<small>读懂一场活动</small></span><b>↗</b></button><button data-demo="desk"><img src="/assets/desk.svg" alt=""><span>书与杯子<small>试着切换物体</small></span><b>↗</b></button></div><p>示例使用人工标注数据，用于体验交互，不是本次 AI 识别结果。</p></div>
+      </section>
+    </main>
+    <footer class="page-footer"><span>RIGHT CLICK REALITY</span><span>把操作，还给物体。 <span class="accent">↗</span></span></footer>
+  </div>
+  <dialog id="result-dialog" class="result-dialog"><div class="result-heading"><span id="result-object"></span><button id="close-result" aria-label="关闭结果">×</button></div><p id="result-source" class="result-source" hidden>交互示例 · 以下为人工准备的内容</p><h2 id="result-title"></h2><p id="result-text" class="result-text"></p><p id="share-note" class="share-note" hidden></p><textarea id="manual-copy" aria-label="请长按或全选复制以下文字" readonly hidden></textarea><div class="result-actions"><button id="copy-result">复制内容</button><button id="share-result">分享 ↗</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
